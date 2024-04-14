@@ -1,0 +1,79 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    background-color: rgba(38, 43, 42, 0.438);
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    z-index: 10;
+    
+}
+.nav-menu li .tag:hover,
+:focus {
+ color: blue,
+  0 0 100px #3070a5;;
+text-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;}
+h1{
+  font-family:"Space Grotesk", sans-serif ;
+}
+.header-bg{
+    background-color: rgba(0, 0, 0, 0.87);
+    transition: 0.5s;
+}
+.nav-menu{
+    display: flex;
+    position:sticky ;
+}
+.nav-menu li {
+    padding: 0 1rem;
+}
+.nav-menu li .tag{
+    font-size: 1.2rem;
+    font-weight: 10;
+    text-decoration: none;
+    
+}
+.img11 img{
+   height: 50px;
+   width: 150px;
+ 
+}
+
+.hamburger{
+
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1040px) {
+    .nav-menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: rgb(0, 0, 0);
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: -3;
+        transition: 0.4s;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .nav-menu li {
+        padding: 1rem 0;
+    }
+    .nav-menu li .tag {
+        font-size: 2rem;
+    }
+    .hamburger{
+
+        display: initial;
+    }
+        
+}
