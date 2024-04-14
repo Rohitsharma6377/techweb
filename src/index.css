@@ -1,0 +1,81 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   font-family: "Space Grotesk", sans-serif;
+}
+
+body{
+    background: black;
+}
+h1 ,h4 ,p ,a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+::-webkit-scrollbar {
+    width: .4rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-bg-secondary);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color:blue;
+    border-radius: 0.5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background-color: blue;
+   box-shadow: 0 0 5px  blue,   0 0 20px  blue, 0 0 50px  blue,
+      0 0 100px  blue;
+  }
+:root {
+    /* Colors
+    ____________________*/
+    --color-primary: #00fff2;
+    --color-primary-dark: #00ffff;
+    --color-bg-primary: #000000;
+    --color-bg-secondary: #242424;
+    --color-bg-footer: #1515157c;
+    --color-white: #ffffff;
+    --color-text: #04e2ff;
+    --color-border: #373737;
+  
+    /* Font & Typography
+    ___________________*/
+    --ff-body: "Space Grotesk", sans-serif;
+    /* font sizes */
+    --fs-sm: 1.4rem;
+    --fs-md: 1.6rem;
+    --fs-lg: 2rem;
+    --fs-xl: 2.4rem;
+    --fs-xxl: 3.2rem;
+    --fs-biggest: clamp(3rem, 8vw, 5rem);
+    /* font weight */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+  
+    /* z-index
+    ___________________*/
+    --zindex-menu: 1000;
+    --zindex-fixed: 1010;
+  
+    /* With & Height 
+    ------------------*/
+    --width-container: 98rem;
+    --height-header: 10rem;
+    --height-header--scroll: 8rem;
+  
+    /* Transition and box shadow*/
+    --transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+ 
